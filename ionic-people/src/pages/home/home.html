@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let person of people">
+      <ion-avatar item-start>
+        <img src="{{person.picture.thumbnail}}">
+      </ion-avatar>
+      <h2>{{person.name.title}} {{person.name.first}} {{person.name.last}}</h2>
+      <p><b>mobile</b> {{person.phone}}</p>      
+    </ion-item>
+  </ion-list>
+</ion-content>
